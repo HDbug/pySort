@@ -20,6 +20,13 @@ for sfile in files:
       print('file (%s) with the extension of (%s)' % (sfile, fileExtension))
       if exists == True:
         print('Folder %s already exists, not creating' %(fileExtension))
+        try:
+            shutil.move('%s\\%s' % (home, sfile), '%s\\%s\\%s' %(home, fileExtensionRemoved, sfile))
+        except:
+          print('And error has occured moving %s to %s\\%s' % (sfile, home, fileExtensionRemoved)) 
       elif exists == False:
         os.mkdir(home + '\\' + fileExtensionRemoved)
-        
+        try:
+            shutil.move('%s\\%s' % (home, sfile), '%s\\%s\\%s' % (home, fileExtensionRemoved, sfile))
+        except:
+          print('And error has occured moving %s to %s\\%s' %(sfile, home, fileExtensionRemoved))
