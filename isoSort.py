@@ -22,7 +22,7 @@ files = os.listdir(location)
 print(os.curdir())
 
 
- for svile in files:
+for svile in files:
 
      iso = fnmatch.fnmatch(svile, '*.iso')
      exe = fnmatch.fnmatch(svile, '*.exe')
