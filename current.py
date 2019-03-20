@@ -12,10 +12,9 @@ for sfile in files:
     check = os.path.isdir('%s\\%s' % (home, sfile))
     exists = os.path.exists(home + '\\' + fileExtension)
     fileExtensionRemoved = fileExtension.replace('.', '')
-    #fnmatch.fnmatch(sfile, )
 
     if check == True:
-      print('%s is a folder' %(sfile))
+      print('%s is a folder and will not be moved' %(sfile))
     elif check == False:
       print('file (%s) with the extension of (%s)' % (sfile, fileExtension))
       if exists == True:
