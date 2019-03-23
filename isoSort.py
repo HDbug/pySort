@@ -1,9 +1,9 @@
-####################################################
+#############################################################################
 #This was the original script that
 #This has since been abandoned because of poor practice and managment
 #The 'current.py' script is far batter as it will automate everything for you
 #Do admire the spaghetti code tho, I know I do
-####################################################
+#############################################################################
 import os
 import shutil
 import fnmatch
