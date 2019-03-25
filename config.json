@@ -1,8 +1,12 @@
 {
-    "folders": [
+    "search": [
         {
-            "C:\Users\Danny\Downloads": true,
-            
+            "location": "C:\\Users\\Danny\\Downloads",
+            "sort": true
+        },
+        {
+            "location": "C:\\Users\\Danny\\Documents",
+            "sort": false
         }
     ]
 }

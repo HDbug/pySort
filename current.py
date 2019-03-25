@@ -8,6 +8,12 @@ sfile = ''
 with open('config.json') as config:
   data = json.load(config)
 
+for setting in data['folder']:
+  print(setting)
+  if setting['sort'] == False:
+    # print('%s blah blah testing blah blah' %(setting))
+    
+
 # for sfile in files:
 #     filename, fileExtension = os.path.splitext('%s\\%s' % (home, sfile))
 #     check = os.path.isdir('%s\\%s' % (home, sfile))
