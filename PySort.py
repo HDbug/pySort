@@ -4,15 +4,15 @@ listR = os.listdir(os.environ['USERPROFILE'])
 home = os.environ['USERPROFILE'] + '\\Downloads'
 files = os.listdir(home)
 sfile = ''
+xlist = []
 
 with open('config.json') as config:
   data = json.load(config)
 
-for setting in data['folder']:
-  print(setting)
-  if setting['sort'] == False:
-    # print('%s blah blah testing blah blah' %(setting))
-    
+for location in data['location']:
+  xlist.append(location)
+
+print(xlist)
 
 # for sfile in files:
 #     filename, fileExtension = os.path.splitext('%s\\%s' % (home, sfile))
